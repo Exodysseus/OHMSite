@@ -177,7 +177,14 @@
   .mainNavigation {
     margin-top: 40px;
     float: left;
-    position: absolute;
+}
+
+.work-Link {
+  text-align: center;
+}
+
+.nav-link {
+  text-align: center;
 }
 
 .ohmLogoContainer {
