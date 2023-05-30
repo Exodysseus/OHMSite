@@ -8,11 +8,10 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-	margin-left: 60px;
+	margin-left: 0px;
     background: none;
     z-index: -1;
     align-items: center;
-    justify-content: space-around;
     pointer-events: none;
 
 }
@@ -46,6 +45,10 @@
 }
 
 @media only screen and (min-width: 981px) {
+    .contactPageContentWrapper {
+        margin-left: 60px;
+    }
+
     .contactLinksGrid {
     grid-template-columns: 30% 30% 30%;
     grid-row-gap: 10px;
