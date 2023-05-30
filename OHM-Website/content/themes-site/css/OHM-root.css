@@ -1,0 +1,127 @@
+@charset "utf-8";
+:root {
+height: 100vh;
+margin: 0px;
+padding: 0px;
+background-color: black;
+color: rgb(211, 240, 255);
+text-shadow: 
+2px -1px 1px rgb(204, 3, 3), 
+0px -1px 3px rgba(49, 255, 210, 0.678),
+30px 10px 1px rgba(44, 64, 73, 0.527);
+font-family: 'Cascadia Code', 'Fira Code', courier, monospace;
+font-size: 14px;
+user-select: none;
+z-index: 1;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+
+}
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js
+{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: -1;
+}
+
+p {
+    user-select: none;
+    pointer-events: none;
+    background-color: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
+    background: none !important;
+}
+
+a {
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    pointer-events: all;
+    user-select: none;
+    background-color: none;
+    z-index: 199;
+    text-shadow: 
+    2px -1px 1px rgb(94, 8, 8), 
+    30px 10px 1px rgb(43, 18, 18);
+
+}
+
+
+a:hover {
+    color:rgb(214, 213, 219);
+    transition: 0.2s; 
+    pointer-events: all; 
+    z-index: 199;
+    
+
+
+}
+
+
+
+.cornerStampWrapper{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    color:rgba(158, 209, 198, 0.801);
+    text-align: right;
+    text-shadow: none;
+    line-height: 2;
+    z-index: 200 ;
+    animation: fadeIn 3s; 
+  }
+
+
+  
+  
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
