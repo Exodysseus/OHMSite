@@ -1,0 +1,163 @@
+.indexShowcaseContainer {
+  left: 24px;
+  bottom: 10px;
+  height: calc(420px + 1rem);
+  width: calc(540px + 1rem);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+
+}
+
+.indexShowcaseWrapper {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: calc(540px + 1rem);
+  padding: 0 0.25rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .indexShowcaseWrapper {
+    flex-direction: row;
+  }
+}
+
+
+div.indexShowcaseWrapper {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+
+.indexShowcaseWrapper::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  background-color: none;
+}
+
+.indexShowcaseWrapper::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+.indexShowcaseThumbs {
+  width: calc(540px + 1rem);
+  object-fit: contain;
+}
+
+div.indexShowcaseThumbs {
+  padding: 10px;
+} 
+
+
+calc(540px + 1rem)
+
+
+.indexText {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-right: 24px;
+  padding-left: 205px;
+  display:flex;
+  text-align: left;
+  animation: fadeIn 5s;
+  z-index: -1;
+  
+}
+
+
+
+//HTML 
+
+    <div class="indexTextContainer">
+        <p class="indexText">Initiating Connection Sequence
+            <br>Test Models: On
+            <br>
+            <br>Initialising Data Pull
+            <br>
+            <br>Connection Terminal 1
+            <br>System File Check
+            <br>Data Integrity: 2% Inaccessible
+            </p>
+        </div>
+
+
+     <div class="indexShowcasesSlideHero"><img src="content\uploads\placeholder 2.png"></div>
+
+        <div class="indexShowcasesSlideBig"><img src="content\uploads\placeholder 2.png"></div>
+        <div class="indexShowcasesSlideSmall"><img src="content\uploads\placeholder 2.png"></div>
+        <div class="indexShowcasesSlideBig"><img src="content\uploads\placeholder 2.png"></div>
+
+
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+            <div class="indexShowcasesSlides"><img class="indexShowcaseThumbs" src="content\uploads\placeholder 2.png"></div>
+
+
+
+
+            @media only screen and (min-width: 420px) {
+    .indexShowcaseGrid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+    .indexShowcasesSlide {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .indexShowcaseGrid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 92%
+    }
+    .indexShowcasesSlide {
+        &:nth-of-type(1) { grid-column: 1 / span 4; grid-row: 1 / span 4;}
+       &:nth-of-type(2) { grid-column: 1 / span 1; }
+       &:nth-of-type(3) { grid-column: 2 / span  2; grid-row: 5 / span 1}
+       &:nth-of-type(4) { grid-column: 4 / span 1; grid-row: 5 / span 1}
+       &:nth-of-type(5) { grid-column: 1 / span 2; grid-row: 8 / span 1}
+       &:nth-of-type(6) { grid-column: 3 / span 2; grid-row: 8 / span 1}
+       &:nth-of-type(7) { grid-column: 1 / span 4; grid-row: 6 / span 2}
+    }
+}
+
+
+
+
+             <!-- Navbar -->
+             <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"> Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="work.html" class="nav-link"><sup>ⳑ</sup> Work</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="about.html" class="nav-link"><sup>ⳑ</sup> About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><sup>ⳑ</sup> Contact</a>
+                     </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+    
+            </nav>
+        <script src="content\themes-site\js\navmenu.js"></script>
